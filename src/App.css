@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  font-family: "Poppins", sans-serif; /* Menggunakan Poppins */
+}
+
+#root {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-family: "Oswald", system-ui;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.chat-box {
+  background-color: #2c2c3e;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.messages {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  padding: 10px;
+  background-color: #2c2c3e; /* Latar belakang area pesan */
+  border-radius: 10px;
+}
+
+.message {
+  background-color: #3d3d5b; /* Warna latar belakang untuk setiap pesan */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px 0;
+  text-align: left;
+  line-height: 1.5; /* Jarak antar baris untuk keterbacaan */
+  word-wrap: break-word; /* Memastikan teks panjang tetap terbungkus */
+}
+
+.response {
+  color: #f1f1f1; /* Teks putih cerah */
+  font-size: 16px; /* Ukuran font jawaban */
+  white-space: pre-wrap; /* Mempertahankan spasi dan baris baru */
+}
+
+
+.btn-generate {
+  width: 100%;
+  background-color: #1e5da5; /* Warna biru lembut */
+  color: #ffffff; /* Teks putih */
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-generate:hover {
+  background-color: #286eb4; /* Warna biru lebih gelap saat hover */
+}
+
+
+.text-area {
+  font-family: "Poppins", sans-serif;
+  width: 92%;
+  border-radius: 10px;
+  font-size: medium;
+  background-color: #1e1e2f;
+  color: #f1f1f1;
+  border: 1px solid #34495e;
+  padding: 10px;
+  resize: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+}
